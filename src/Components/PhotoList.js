@@ -43,7 +43,8 @@ export default class PhotoList extends React.Component {
 
         return (
             <ul style={ulStyle}>
-                {albumPhotos.map(photo => <this.Photo photo={photo}/>)}
+                {albumPhotos.map(photo => <this.Photo photo={photo}
+                                                      key={photo.id}/>)}
             </ul>
         );
     }
